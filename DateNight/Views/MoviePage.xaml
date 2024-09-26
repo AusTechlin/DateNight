@@ -8,10 +8,9 @@
             <Image Source="main_movie.png" />
             
             <Border Stroke="Gray" StrokeThickness="1" Margin="0,50,0,30">
-                <Entry Placeholder="Enter Total Cost of the Movie" Keyboard="Numeric" />
+                <Entry x:Name="txtMovie" Placeholder="Enter Total Cost of the Movie" Keyboard="Numeric" />
             </Border>
             
-            <Button Text="Total Cost of the Movie" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

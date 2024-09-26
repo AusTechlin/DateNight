@@ -12,4 +12,10 @@ public partial class DinnerPage : ContentPage
     {
         InitializeComponent();
     }
+    
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        App.dateCalc.DinnerCost = txtDinner.Text;
+    }
 }

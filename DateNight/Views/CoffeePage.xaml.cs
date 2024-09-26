@@ -12,4 +12,10 @@ public partial class CoffeePage : ContentPage
     {
         InitializeComponent();
     }
+
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        App.dateCalc.CoffeeCost = txtCoffee.Text;
+    }
 }

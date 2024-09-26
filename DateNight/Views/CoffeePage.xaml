@@ -8,10 +8,9 @@
             <Image Source="main_coffee.png" />
             
             <Border Stroke="Gray" StrokeThickness="1" Margin="0,50,0,30">
-                <Entry Placeholder="Enter Total Cost of Coffee" Keyboard="Numeric" />
+                <Entry x:Name="txtCoffee" Placeholder="Enter Total Cost of Coffee" Keyboard="Numeric" />
             </Border>
             
-            <Button Text="Total Cost of Coffee" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

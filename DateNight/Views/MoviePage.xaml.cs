@@ -12,4 +12,10 @@ public partial class MoviePage : ContentPage
     {
         InitializeComponent();
     }
+    
+    protected override void OnDisappearing()
+    {
+        base.OnDisappearing();
+        App.dateCalc.MovieCost = txtMovie.Text;
+    }
 }
